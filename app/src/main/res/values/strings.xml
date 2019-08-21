@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QInsight</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission. The
+        application will now exit.
+    </string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="please_enter_your_phone_number_below">Please Enter Your Phone Number below</string>
+    <string name="next">Next</string>
+    <string name="full_name">Full Name</string>
+    <string name="please_enter_your_full_name_below">Please Enter Your Full Name below</string>
+    <string name="submit">Submit</string>
+    <string name="previous">Previous</string>
+    <string name="cars45">cars45</string>
+    <string name="face_detections_currently_running">Face Detection Running…</string>
+</resources>

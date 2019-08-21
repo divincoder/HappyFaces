@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+               android:id="@+id/cars_45_logo"
+               android:src="@drawable/cars_45_logo"
+               android:padding="20dp"
+               android:layout_centerInParent="true" android:contentDescription="@string/cars45"/>
+
+    <TextView
+            android:id="@+id/face_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cars_45_logo"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/grey"
+            android:layout_marginTop="20dp"
+            android:text="@string/face_detections_currently_running"/>
+
+    <devnibbles.android.facialrecognition.detect.common.CameraSourcePreview
+            android:id="@+id/preview"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <devnibbles.android.facialrecognition.detect.common.GraphicOverlay
+                android:id="@+id/faceOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </devnibbles.android.facialrecognition.detect.common.CameraSourcePreview>
+</RelativeLayout>
