@@ -1,4 +1,2 @@
-This Pilot of this project was made possible from directions from DveNibbles medium Post and Code
-
-Part 1 - https://medium.com/devnibbles/facial-recognition-with-android-1-4-5e043c264edc  
-Part 2 - https://medium.com/devnibbles/facial-recognition-with-android-2-4-d02f03f2a11e
+This Pilot of this project was made possible from directions from DevNibbles medium Post and Open Source Code
+https://medium.com/devnibbles/facial-recognition-with-android-1-4-5e043c264edc  
