@@ -18,4 +18,5 @@
     <string name="previous">Previous</string>
     <string name="cars45">cars45</string>
     <string name="face_detections_currently_running">Face Detection Running…</string>
+    <string name="welcome_to_zenathon">Welcome to Zenathon</string>
 </resources>

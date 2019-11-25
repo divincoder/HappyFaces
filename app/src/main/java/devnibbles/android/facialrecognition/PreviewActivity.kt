@@ -63,7 +63,7 @@ class PreviewActivity : AppCompatActivity() {
                 textToSpeech.language = Locale.ENGLISH
                 textToSpeech.setOnUtteranceProgressListener(utteranceProgressListener)
 
-                speech = "Hello!, Please Enter your Full Name Below"
+                speech = "Hello, Please enter your Full Name and Phone Number Below"
                 // params[TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID] = utteranceProgressListener.
 
                 textToSpeech.speak(speech, TextToSpeech.QUEUE_FLUSH, null)
@@ -81,10 +81,11 @@ class PreviewActivity : AppCompatActivity() {
         }
 
         submit_button.setOnClickListener {
-            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
             name = name_EDT.text.toString()
             phone = phone_EDT.text.toString()
-            if (endOfField) {
+
+            if (name.isNotEmpty() && phone.isNotEmpty()) {
                 Toast.makeText(this, "button clicked after $name and $phone", Toast.LENGTH_SHORT).show()
 
                 mViewModel.postCustomerData(name, phone)
@@ -108,22 +109,22 @@ class PreviewActivity : AppCompatActivity() {
     }
 
     private fun showNextField() {
-        input_flippers.showNext()
-        speech = "Please, Enter your Phone Number Below"
-        textToSpeech.speak(speech, TextToSpeech.QUEUE_FLUSH, null)
-
-        submit_button.text = getString(R.string.submit)
-        endOfField = true
-
-        previous_button.visibility = View.VISIBLE
-        previous_button.setOnClickListener {
-            input_flippers.showPrevious()
-            endOfField = false
-            previous_button.visibility = View.INVISIBLE
-            speech = "Hello!, Please Enter your Full Name Below"
-            submit_button.text = getString(R.string.next)
-            textToSpeech.speak(speech, TextToSpeech.QUEUE_FLUSH, null)
-        }
+//        input_flippers.showNext()
+//        speech = "Hello, Please enter your Full Name and Phone Number Below"
+//        textToSpeech.speak(speech, TextToSpeech.QUEUE_FLUSH, null)
+////
+//        submit_button.text = getString(R.string.submit)
+//        endOfField = true
+//
+//        previous_button.visibility = View.VISIBLE
+//        previous_button.setOnClickListener {
+//            input_flippers.showPrevious()
+//            endOfField = false
+//            previous_button.visibility = View.INVISIBLE
+//            speech = "Hello!, Please Enter your Full Name Below"
+//            submit_button.text = getString(R.string.next)
+//            textToSpeech.speak(speech, TextToSpeech.QUEUE_FLUSH, null)
+//        }
     }
 
     public override fun onPause() {
